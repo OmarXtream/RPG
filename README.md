@@ -23,3 +23,4 @@ Or [Contact me](https://solo.to/omarxtream).
 ## Credits
 
 -   [OmarXtream](https://github.com/OmarXtream)
+-   [Hassan AlShammari](https://github.com/HassanTheWhale)
