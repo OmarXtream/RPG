@@ -1,0 +1,400 @@
+@font-face {
+  font-family: "JF Flat Regular";
+  src: url('../fonts/JF-Flat-regular.eot');
+  src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+  url('../fonts/JF-Flat-regular.woff') format('woff'),
+  url('../fonts/JF-Flat-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "JF Flat Regular", "roboto", sans-serif, arial;
+  color: #2F2B2B;
+  overflow: hidden;
+}
+
+input:focus {
+  outline: 0 none !important;
+  box-shadow: 0 0 0 0 black inset !important;
+  border: 1px solid #D63767 !important
+}
+
+.g-recaptcha > div {
+  margin: auto !important;
+}
+
+.v-none {visibility: hidden;}
+.preload {
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  animation-duration: .5s
+}
+.line {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #D63767;
+}
+.line:nth-last-child(1) {animation: loadingC .6s .1s linear infinite;}
+.line:nth-last-child(2) {animation: loadingC .6s .2s linear infinite;}
+.line:nth-last-child(3) {animation: loadingC .6s .3s linear infinite;}
+@keyframes loadingC {
+    0 {transform: translate(0,0);}
+    50% {transform: translate(0,15px);}
+    100% {transform: translate(0,0);}
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-transform: inherit;
+}
+.register, .registrationP {
+  background-color: #fafafa;
+  background-image: url('../imgs/loginBG.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+  padding: 8px;
+}
+.register .content, .registrationP .content {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgba(117,117,117,1);
+  padding: 32px;
+}
+.launcher .download, .donation .part .donate, .registration .registerTick, .rules .rChoose, .admin .aChoose {
+  margin-top: 48px;
+  background-color: #D63767 !important;
+  border: none !important;
+  box-shadow: 0px 0px black !important;
+  font-size: 1.4em;
+  padding: 15px 40px;
+  -webkit-clip-path: polygon(20% 18%, 100% 0%, 75% 100%, 0 88%);
+  clip-path: polygon(20% 18%, 100% 0%, 75% 100%, 0 88%);
+  border-radius: 0;
+  min-width: 172px
+}
+
+.aboutus h1, .donation h1, .rules h1, .launcher h1 {
+  color: #FF91A2;
+  font-size: 4em;
+  z-index: 0;
+  margin-bottom: 48px;
+  position: relative;
+}
+.aboutus h1::before, .launcher h1::before, .rules h1::before, .donation h1::before  {
+  font-size: 0.65em;
+  top: 45px;
+  right: 73px;
+  position: absolute;
+  color: #000;
+  z-index: 10
+}
+.aboutus p, .launcher p, .rules p, .registration p, .donation p {
+  margin-top: 48px;
+  font-size: 1.2em;
+  text-indent: 16px;
+  color: #736E6E;
+}
+.donation .part ul li, .rules ul li {
+  margin-top: 16px;
+  color: #736E6E;
+}
+.donationInfo .btn-primary, .registrationP .btn-secondary {
+  background-color: #D63767 !important;
+  border: none !important;
+  box-shadow: 0 0 0 0 black inset !important;
+  outline: 0 none;
+}
+.rules .rChoose, .admin .aChoose {
+  margin: 0;
+  font-size: 1em;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+  color: #736E6E !important;
+  background-color: #EBEBEB !important;
+}
+.rules .active, .admin .active {
+  background-color: #D63767 !important;
+  color: #fff !important;
+}
+.rules .rulesS, .admin .adminS {animation-duration: 0.25s}
+.toTop {
+  position: fixed;
+  height: 48px;
+  width: 48px;
+  left: 24px;
+  bottom: 32px;
+  background-color: #D63767;
+  color: #fff;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 48px;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.toTop:hover {background-color: #F6687C}
+
+.tri {width: 20%; position: absolute;}
+.effect {position: absolute;}
+
+/* Start Nav */
+.navbar-brand {margin-left: 64px;}
+.nav-link, .navLogin {
+  color: #736E6E !important;
+  margin-left: 16px;
+  font-size: 1.1em;
+}
+
+.navLogin {
+  padding: .5rem 0;
+  display: block;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+.navbar-nav .active > .nav-link {color: #F6687C !important}
+
+.navbar .dropdown-menu {
+  min-width: 13em;
+}
+.navbar .dropdown-menu button {
+  margin: 0;
+  font-size: 1em;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+  background-color: #D63767 !important;
+  color: #fff !important;
+  padding: 13px 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.navbar .dropdown-item {
+  background-color: #fff !important;
+  color: inherit !important;
+}
+/* End Nav */
+
+/* Start main */
+.main {
+  background-image: url('../imgs/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+/* End main */
+
+/* Start About Us */
+.aboutus {
+  padding: 96px 0;
+  overflow: hidden;
+  position: relative;
+}
+.aboutus h1::before {content: "من نحن"}
+/* End About Us */
+
+/* Start launcher */
+.launcher {
+  padding: 96px 0;
+  overflow: hidden;
+}
+.launcher h1::before {
+  content: "اللانشر";
+}
+/* End launcher */
+
+/* Start Rules */
+.rules {
+  padding: 94px 0;
+  overflow: hidden;
+}
+.rules h1 {display: inline}
+.rules h1::before {
+  content: "القوانين";
+  top: 66px;
+  right: 59px;
+}
+.rules .rulesBut {
+  margin-top: 32px;
+}
+.rules ul {
+  margin-top: 64px;
+  list-style: url('../imgs/list.png');
+}
+/* End Rules */
+
+/* Start Registration */
+.registration {
+  padding: 288px 48px;
+  background-color: #F6687C;
+  -webkit-clip-path: polygon(30% 0, 100% 10%, 100% 90%, 70% 100%, 0 90%, 0 4%);
+  clip-path: polygon(30% 0, 100% 10%, 100% 90%, 70% 100%, 0 90%, 0 4%);
+  background-image: url('../imgs/t.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.registration h2 {
+  color: #fff;
+  font-size: 3em;
+  position: relative;
+  display: inline;
+}
+
+.registration h2::before {
+  font-size: 1em;
+  content: "التقديم";
+  top: -3px;
+  right: 40px;
+  position: absolute;
+  color: #D63767;
+  z-index: -1;
+}
+
+.registration p {color: #fff}
+/* End Registration */
+
+/* Start Donation */
+.donation {
+  padding: 94px 0;
+  overflow: hidden;
+}
+.donation h1::before {
+  content: "الدعم";
+  top: 36px;
+  right: 62px;
+}
+.donation p {margin: 48px}
+.donation .progressa {
+  margin: 92px 0;
+  color: #D63767;
+}
+.donation .progressa .steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.donation .progressa .steps > .step {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  font-size: 1.3em;
+}
+.donation .progressa .steps > .step:before {
+  display: block;
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  margin-bottom: -6rem;
+  line-height: 48px;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: relative;
+  z-index: 1;
+}
+.donation .progressa .steps > .step:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #e6e6e6;
+  width: 100%;
+  height: 0.125rem;
+  top: 3rem;
+  left: 50%;
+}
+.donation .progressa .steps > .step:first-child:after {display: none}
+.donation .progressa .steps > .step:before {
+  content: '';
+  background: #e6e6e6;
+}
+.donation .progressa .steps > .step.active:before {background-color: #D63767}
+.donation .col-md-4 {padding: 32px;}
+.donation .part {
+  background-color: #F4F4F4;
+  -webkit-clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+  clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+  min-height: 256px;
+  padding: 8px;
+}
+.donation .part h5 {margin-bottom: 16px}
+.donation .part h3 {color: #F6687C}
+.donation .part ul {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+/* End Donation */
+
+/* Start Copyright */
+.copyright {
+  background-color: #2F2B2B;
+  font-size: 1.2em;
+  padding: 16px;
+  color: #fff;
+  direction: ltr;
+  overflow: hidden;
+}
+.copyright span {color: red;}
+.copyright a {color: inherit;}
+.copyright a img {width: 24px}
+/* End Copyright */
+
+/* Start Register */
+.register img {
+  width: 20%;
+  margin-bottom: 32px;
+}
+.register form input {
+  width: 50%;
+  margin: auto;
+}
+.register form button {
+  margin: 0;
+  font-size: 1.2em;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+  background-color: #D63767 !important;
+  color: #fff !important;
+  padding: 15px 60px;
+  border: none;
+  cursor: pointer;
+}
+/* End Register */
+
+/* Start Registration */
+.registrationP .animate {animation-duration: 0.5s;}
+/* End Registration */
+
+/* Start Admin */
+.admin {
+  padding: 46px 0;
+  background-color: #fafafa
+}
+.admin .jumbotron h2 {margin-bottom: 24px;}
+.admin .admin-card {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+}
+.admin .searchForm {margin-bottom: 24px;}
+/* End Admin */
